@@ -1,0 +1,29 @@
+<h1><%= I18n.t"news_list" %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= I18n.t"title" %></th>
+      <th><%= I18n.t"content" %></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @news.each do |news| %>
+      <tr>
+        <td><%= news.title %></td>
+        <td><%= news.content %></td>
+        <td><%= link_to (I18n.t"show"), news %></td>
+        <td><%= link_to (I18n.t"edit"), edit_news_path(news) %></td>
+        <td><%= link_to (I18n.t"delete"), news, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to (I18n.t"new_new"), new_news_path %>
