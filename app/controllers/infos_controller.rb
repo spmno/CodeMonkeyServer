@@ -24,13 +24,22 @@ class InfosController < ApplicationController
   # POST /infos
   # POST /infos.json
   def create
-    print info_params
-    @info = Info.new(info_params)
+    @info = Info.new
+    @info.title = info_params['title']
+    @info.content = info_params['content']
     @image = Image.new
+    @image.photo = info_params['photo']
+
     respond_to do |format|
       if @info.save
-        format.html { redirect_to @info, notice: 'Info was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @info }
+        @image.info_id = @info.id
+        if @image.save
+          format.html { redirect_to @info, notice: 'Info was successfully created.' }
+          format.json { render action: 'show', status: :created, location: @info }
+        else
+          format.html { render action: 'new' }
+        end
+
       else
         format.html { render action: 'new' }
         format.json { render json: @info.errors, status: :unprocessable_entity }
@@ -70,6 +79,6 @@ class InfosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def info_params
-      params.require(:info).permit(:title, :content)
+      params.require(:info).permit(:title, :content, :photo)
     end
 end

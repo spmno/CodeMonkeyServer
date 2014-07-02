@@ -10,5 +10,12 @@
   <%= @info.content %>
 </p>
 
+<p>
+  <strong>Image:</strong>
+  <% @info.images.each do |image| %>
+    <%= image_tag(image.photo) %>
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_info_path(@info) %> |
 <%= link_to 'Back', infos_path %>
