@@ -1,4 +1,8 @@
 json.array!(@infos) do |info|
-  json.extract! info, :id, :title, :content
-  json.url info_url(info, format: :json)
+  json.title = info.title
+  json.content = info.content
+  json.images info.images do |image|
+    json.id image.id
+    json.photo image.photo.url
+  end
 end
