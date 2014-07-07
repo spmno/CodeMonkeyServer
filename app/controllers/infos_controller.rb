@@ -4,7 +4,9 @@ class InfosController < ApplicationController
   # GET /infos
   # GET /infos.json
   def index
-    @infos = Info.all
+    #@infos = Info.all
+    offset = params['offset']
+    @infos = Info.order("updated_at desc").offset(offset).limit(10)
   end
 
   # GET /infos/1
