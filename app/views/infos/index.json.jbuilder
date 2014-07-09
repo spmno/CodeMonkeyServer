@@ -1,4 +1,5 @@
 json.array!(@infos) do |info|
+  json.id info.id
   json.title info.title
   json.content info.content
   json.images info.images do |image|
