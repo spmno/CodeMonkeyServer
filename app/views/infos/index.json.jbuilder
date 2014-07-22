@@ -6,4 +6,5 @@ json.array!(@infos) do |info|
     json.id image.id
     json.photo image.photo.url
   end
+  json.updated_at info.updated_at
 end

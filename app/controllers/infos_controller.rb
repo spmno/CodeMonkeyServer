@@ -73,6 +73,10 @@ class InfosController < ApplicationController
     end
   end
 
+  def last_info_time
+    @last_info = Info.last
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_info

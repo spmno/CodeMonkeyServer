@@ -1,5 +1,9 @@
 CodeMonkeyServer::Application.routes.draw do
-  resources :infos
+  resources :infos do
+    collection do
+      get 'last_info_time'
+    end
+  end
 
   resources :images
 
