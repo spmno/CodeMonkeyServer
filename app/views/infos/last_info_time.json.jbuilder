@@ -1,0 +1,1 @@
+json.time @last_info.updated_at
