@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @new_skill_get.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @new_skill_get.content %>
+</p>
+
+<%= link_to 'Edit', edit_new_skill_get_path(@new_skill_get) %> |
+<%= link_to 'Back', new_skill_gets_path %>

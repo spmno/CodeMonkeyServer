@@ -1,0 +1,29 @@
+<h1>Listing new_skill_gets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @new_skill_gets.each do |new_skill_get| %>
+      <tr>
+        <td><%= new_skill_get.title %></td>
+        <td><%= new_skill_get.content %></td>
+        <td><%= link_to 'Show', new_skill_get %></td>
+        <td><%= link_to 'Edit', edit_new_skill_get_path(new_skill_get) %></td>
+        <td><%= link_to 'Destroy', new_skill_get, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New New skill get', new_new_skill_get_path %>

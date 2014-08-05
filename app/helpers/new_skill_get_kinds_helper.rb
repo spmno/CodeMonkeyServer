@@ -1,0 +1,2 @@
+module NewSkillGetKindsHelper
+end

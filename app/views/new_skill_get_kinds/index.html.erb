@@ -1,0 +1,25 @@
+<h1>Listing new_skill_get_kinds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @new_skill_get_kinds.each do |new_skill_get_kind| %>
+      <tr>
+        <td><%= link_to 'Show', new_skill_get_kind %></td>
+        <td><%= link_to 'Edit', edit_new_skill_get_kind_path(new_skill_get_kind) %></td>
+        <td><%= link_to 'Destroy', new_skill_get_kind, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New New skill get kind', new_new_skill_get_kind_path %>

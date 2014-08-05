@@ -1,4 +1,8 @@
 CodeMonkeyServer::Application.routes.draw do
+  resources :new_skill_get_kinds
+
+  resources :new_skill_gets
+
   resources :infos do
     collection do
       get 'last_info_time'
