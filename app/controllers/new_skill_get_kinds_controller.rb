@@ -69,6 +69,6 @@ class NewSkillGetKindsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def new_skill_get_kind_params
-      params[:new_skill_get_kind]
+      params.require(:new_skill_get_kind).permit(:title)
     end
 end
