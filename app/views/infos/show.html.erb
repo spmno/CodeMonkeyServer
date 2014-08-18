@@ -12,7 +12,7 @@
 
 <p>
   <% @info.images.each do |image| %>
-    <%= image_tag(image.photo) %>
+    <%= image_tag(image.photo, :class => "img-responsive") %>
   <% end %>
 </p>
 
