@@ -12,8 +12,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/CodeMonkeyServer@Development__CodeMonkeyServer.coverage" NAME="Development: CodeMonkeyServer Coverage Results" MODIFIED="1408851464182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CodeMonkeyServer" />
-    <SUITE FILE_PATH="coverage/CodeMonkeyServer@Rails_console__CodeMonkeyServer.coverage" NAME="Rails console: CodeMonkeyServer Coverage Results" MODIFIED="1408849886608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CodeMonkeyServer" />
+    <SUITE FILE_PATH="coverage/CodeMonkeyServer@Development__CodeMonkeyServer.coverage" NAME="Development: CodeMonkeyServer Coverage Results" MODIFIED="1408854055374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CodeMonkeyServer" />
+    <SUITE FILE_PATH="coverage/CodeMonkeyServer@Rails_console__CodeMonkeyServer.coverage" NAME="Rails console: CodeMonkeyServer Coverage Results" MODIFIED="1408854904792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CodeMonkeyServer" />
     <SUITE FILE_PATH="coverage/CodeMonkeyServer@db_migrate__CodeMonkeyServer.coverage" NAME="db:migrate: CodeMonkeyServer Coverage Results" MODIFIED="1408850595845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CodeMonkeyServer" />
     <SUITE FILE_PATH="coverage/CodeMonkeyServer@Production__CodeMonkeyServer.coverage" NAME="Production: CodeMonkeyServer Coverage Results" MODIFIED="1404873281017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="CodeMonkeyServer" />
   </component>
@@ -42,8 +42,18 @@
       <file leaf-file-name="new_skill_gets_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/new_skill_gets_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6442308" vertical-offset="800" max-vertical-offset="1558">
-              <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+            <state vertical-scroll-proportion="0.33248731" vertical-offset="2" max-vertical-offset="1634">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -94,7 +104,6 @@
         <option value="$PROJECT_DIR$/app/views/infos/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/infos/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/infos/index.json.jbuilder" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/infos_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/infos/last_info_time.json.jbuilder" />
         <option value="$PROJECT_DIR$/db/migrate/20140807025838_add_title_to_new_skill_get_kind.rb" />
@@ -116,6 +125,7 @@
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/db/migrate/20140824031903_add_new_skill_get_kind_id_to_new_skill_get.rb" />
         <option value="$PROJECT_DIR$/app/views/new_skill_gets/_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/new_skill_gets_controller.rb" />
       </list>
     </option>
@@ -341,7 +351,7 @@
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="Rails.Development: CodeMonkeyServer">
+  <component name="RunManager" selected="IRB console.Rails console: CodeMonkeyServer">
     <configuration default="false" name="db:migrate: CodeMonkeyServer" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="CodeMonkeyServer" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -525,8 +535,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate: CodeMonkeyServer" />
-        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: CodeMonkeyServer" />
+        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: CodeMonkeyServer" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate: CodeMonkeyServer" />
       </list>
     </recent_temporary>
   </component>
@@ -717,13 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="551" max-vertical-offset="665">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1368">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -955,6 +958,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1482">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/new_skill_get_kinds_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1520">
@@ -965,8 +976,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/new_skill_gets_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6442308" vertical-offset="800" max-vertical-offset="1558">
-          <caret line="28" column="83" selection-start-line="28" selection-start-column="83" selection-end-line="28" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.33248731" vertical-offset="2" max-vertical-offset="1634">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding />
         </state>
       </provider>

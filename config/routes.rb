@@ -1,5 +1,7 @@
 CodeMonkeyServer::Application.routes.draw do
-  resources :new_skill_get_kinds
+  resources :new_skill_get_kinds do
+    resources :new_skill_gets
+  end
 
   resources :new_skill_gets
 

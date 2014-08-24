@@ -4,7 +4,11 @@ class NewSkillGetsController < ApplicationController
   # GET /new_skill_gets
   # GET /new_skill_gets.json
   def index
-    @new_skill_gets = NewSkillGet.all
+    if (params[:new_skill_get_kind_id])
+      @new_skill_gets = NewSkillGetKind.find(params[:new_skill_get_kind_id]).new_skill_gets
+    else
+      @new_skill_gets = NewSkillGet.all
+    end
   end
 
   # GET /new_skill_gets/1
