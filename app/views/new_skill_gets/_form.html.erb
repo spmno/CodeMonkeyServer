@@ -12,14 +12,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title, (I18n.t"title") %><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
+    <%= f.select(:new_skill_get_kind_id, @new_skill_get_kinds.collect{|t| [t.title, t.id]}, :prompt => (I18n.t"select_new_skill_get_kind")) %>
+  </div>
+  <div class="field">
+    <%= f.label :content, (I18n.t"content") %><br>
     <%= f.text_area :content %>
   </div>
+
+
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit(I18n.t"new_new_skill_get") %>
   </div>
 <% end %>

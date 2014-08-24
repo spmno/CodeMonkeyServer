@@ -1,10 +1,10 @@
-<h1>Listing new_skill_gets</h1>
+<h1><%= I18n.t"new_skill_get" %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
+      <th><%= I18n.t"title" %></th>
+      <th><%= I18n.t"content" %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New New skill get', new_new_skill_get_path %>
+<%= link_to (I18n.t"new_new_skill_get"), new_new_skill_get_path %>

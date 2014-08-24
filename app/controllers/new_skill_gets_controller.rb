@@ -14,6 +14,7 @@ class NewSkillGetsController < ApplicationController
 
   # GET /new_skill_gets/new
   def new
+    @new_skill_get_kinds = NewSkillGetKind.all
     @new_skill_get = NewSkillGet.new
   end
 
@@ -24,7 +25,8 @@ class NewSkillGetsController < ApplicationController
   # POST /new_skill_gets
   # POST /new_skill_gets.json
   def create
-    @new_skill_get = NewSkillGet.new(new_skill_get_params)
+    @new_skill_get_kind = NewSkillGetKind.find(params[:new_skill_get][:new_skill_get_kind_id])
+    @new_skill_get = @new_skill_get_kind.new_skill_gets.create(new_skill_get_params)
 
     respond_to do |format|
       if @new_skill_get.save
@@ -69,6 +71,6 @@ class NewSkillGetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def new_skill_get_params
-      params.require(:new_skill_get).permit(:title, :content)
+      params.require(:new_skill_get).permit(:title, :content, :new_skill_get_kind_id)
     end
 end
