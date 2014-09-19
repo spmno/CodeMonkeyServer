@@ -1,4 +1,5 @@
 CodeMonkeyServer::Application.routes.draw do
+  devise_for :users
   resources :new_skill_get_kinds do
     resources :new_skill_gets
   end
