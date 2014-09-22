@@ -1,5 +1,9 @@
 CodeMonkeyServer::Application.routes.draw do
-  devise_for :users
+  get "session/new"
+  get "session/create"
+  get "session/destroy"
+  #devise_for :users
+  devise_for :users, :controllers => {:sessions => "users/sessions"}
   resources :new_skill_get_kinds do
     resources :new_skill_gets
   end
