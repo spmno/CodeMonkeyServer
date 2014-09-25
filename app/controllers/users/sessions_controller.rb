@@ -8,7 +8,12 @@ class Users::SessionsController < Devise::SessionsController
 
   def create
     resource = User.find_for_database_authentication(:email => params[:user][:email])
-    return failure unless resource
+    if !resource
+      user = User.find_by_email(params[:user][:email])
+      if user.authenticate(params[:user][:password])
+        respond_with user.authentication_token.as_json
+      end
+    end
 
     if resource.valid_password?(params[:user][:password])
       sign_in(:user, resource)
